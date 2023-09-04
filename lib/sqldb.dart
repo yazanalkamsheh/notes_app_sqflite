@@ -7,12 +7,6 @@ class SqlDb {
 
   static Database? _db;
 
-  static const table = 'notes';
-
-  static const columnId = 'id';
-  static const columnName = 'title';
-  static const columnAge = 'note';
-
   Future<Database?> get db async {
     _db ??= await initialDb();
     return _db;
